@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <TextView
+            android:id="@+id/textViewHistory"
+            android:layout_width="match_parent"
+            android:textColor="#000000"
+            android:textSize="40sp"
+            android:layout_margin="10sp"
+            android:layout_height="wrap_content" />
+
+    </ScrollView>
+
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewAnsField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:layout_marginStart="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewEqField"
+        app:layout_constraintVertical_bias="0.0" >
+
+        <TextView
+            android:id="@+id/textViewAnsField"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:gravity="bottom|end"
+            android:layout_gravity="end|bottom"
+            android:textSize="50sp"
+            android:textColor="#000000" />
+
+    </HorizontalScrollView>
+
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewEqField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10sp"
+        android:layout_marginStart="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" >
+
+        <TextView
+            android:id="@+id/textViewEqField"
+            android:layout_width="wrap_content"
+            android:layout_height="100sp"
+            android:gravity="end|bottom"
+            android:layout_gravity="end|bottom"
+            android:textSize="50sp"
+            android:textColor="#000000" />
+
+    </HorizontalScrollView>
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayActMain"
+        android:layout_width="match_parent"
+        android:layout_height="0sp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollViewAnsField"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/textViewAC"
+                android:text="AC"
+                style="@style/TextViewButtonsStyleOperations"
+                android:theme="@style/ButtonsOperandsTheme"/>
+
+            <Button
+                android:id="@+id/textViewLeftBracket"
+                android:text="("
+                style="@style/TextViewButtonsStyleOperations"
+                android:theme="@style/ButtonsOperandsTheme"/>
+
+            <Button
+                android:id="@+id/textViewRightBracket"
+                android:text=")"
+                style="@style/TextViewButtonsStyleOperations"
+                android:theme="@style/ButtonsOperandsTheme"/>
+
+            <Button
+                android:id="@+id/textViewOperationDivision"
+                android:text="/"
+                style="@style/TextViewButtonsStyleOperations"
+                android:theme="@style/ButtonsOperandsTheme"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/textViewNumber1"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="1"/>
+
+            <Button
+                android:id="@+id/textViewNumber2"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="2"/>
+
+            <Button
+                android:id="@+id/textViewNumber3"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="3"/>
+
+            <Button
+                android:id="@+id/textViewOperationPlus"
+                style="@style/TextViewButtonsStyleOperations"
+                android:theme="@style/ButtonsOperandsTheme"
+                android:text="+"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/textViewNumber4"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="4"/>
+
+            <Button
+                android:id="@+id/textViewNumber5"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="5"/>
+
+            <Button
+                android:id="@+id/textViewNumber6"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="6"/>
+
+            <Button
+                android:id="@+id/textViewOperationMinus"
+                style="@style/TextViewButtonsStyleOperations"
+                android:theme="@style/ButtonsOperandsTheme"
+                android:text="-"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/textViewNumber7"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="7"/>
+
+            <Button
+                android:id="@+id/textViewNumber8"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="8"/>
+
+            <Button
+                android:id="@+id/textViewNumber9"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="9"/>
+
+            <Button
+                android:id="@+id/textViewOperationMultiply"
+                style="@style/TextViewButtonsStyleOperations"
+                android:theme="@style/ButtonsOperandsTheme"
+                android:text="*"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0sp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/textViewPoint"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="." />
+
+            <Button
+                android:id="@+id/textViewNumber0"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/textViewDelete"
+                style="@style/TextViewButtonsStyleNumbers"
+                android:theme="@style/ButtonsNumbersTheme"
+                android:text="DEL"/>
+
+            <Button
+                android:id="@+id/textViewOperationEqual"
+                style="@style/TextViewButtonsStyleOperations"
+                android:theme="@style/ButtonsOperandsTheme"
+                android:text="="/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout >

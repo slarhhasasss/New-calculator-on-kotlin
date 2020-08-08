@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textViewNameOfLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10sp"
+            android:text="@string/exp5j_license_name"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/textViewDateOfLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/exp5j_license_date"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:layout_margin="10sp"/>
+
+        <TextView
+            android:id="@+id/textViewBodyOfLicense"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="15sp"
+            android:text="@string/exp5j_license_body"
+            android:layout_margin="10sp"/>
+
+
+    </LinearLayout>
+
+
+
+
+</androidx.cardview.widget.CardView>
